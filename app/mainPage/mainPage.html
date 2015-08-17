@@ -1,0 +1,33 @@
+<div class="main-page-container">
+    <table class="table table-hover table-bordered">
+        <thead>
+        <caption class="Lead"><h1>List of tasks</h1></caption>
+        <tr>
+            <th>#</th>
+            <th>name</th>
+            <th>tags</th>
+            <th>actual effort</th>
+            <th>estimated effort</th>
+            <th>due date</th>
+        </tr>
+
+        </thead>
+        <tbody>
+        <tr ng-class="{priority: task.is_high_priority}"
+            ng-repeat="task in myStorage | orderBy: 'id' | filter: 'active' as myStorage">
+            <td><a ng-href="#/task/{{task.id}}">{{task.id}}</a></td>
+            <td><a ng-href="#/task/{{task.id}}">{{task.name}}</a></td>
+            <td>
+                <ul>
+                    <li ng-repeat="tag in task.tags"><a ng-href="#/task/{{task.id}}">{{tag}}</a></li>
+                </ul>
+            </td>
+            <!--<td><a ng-href="#/task/{{task.id}}">{{task.actual_effort}}</a></td>-->
+            <td><a ng-href="#/task/{{task.id}}"><span ng-bind="getTime(task.actual_effort)"></span></a></td>
+            <td><a ng-href="#/task/{{task.id}}"><span ng-bind="getTime(task.estimated_effort)"></span></a></td>
+            <td><a ng-href="#/task/{{task.id}}">{{task.due_date | date:"MM/dd/yyyy 'at' H:mm"}}</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+

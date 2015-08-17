@@ -1,0 +1,20 @@
+{
+  "name": "tryunit",
+  "version": "0.0.0",
+  "authors": [
+    "Roman Kononikhin <rkon2006@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-mocks": "~1.4.3",
+    "angular": "~1.4.3",
+    "moment": "~2.10.6"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "TryUnitTests",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "main": "gruntfile.js",
+  "dependencies": {
+    "bower": "^1.4.1",
+    "grunt": "^0.4.5",
+    "jasmine-core": "^2.3.4",
+    "karma-chrome-launcher": "^0.2.0",
+    "grunt-karma": "^0.12.0",
+    "karma": "^0.12.37",
+    "karma-jasmine": "^0.3.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "test": "tests"
+  }
+}

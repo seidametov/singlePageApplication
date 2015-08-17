@@ -1,0 +1,25 @@
+<div class="task-header"></div>
+
+<div class="task-page-container">
+    <div class="task-container">
+        <dl class="dl-horizontal">
+            <dt class="task-name">
+                <p ng-bind="currentTask.name"></p>
+            </dt>
+            <dd class="task-description" ng-if="currentTask.description.length">
+                <p ng-bind="currentTask.description"></p>
+            </dd>
+            <dd class="task-description" ng-if="!currentTask.description.length">
+                <p>no description</p>
+            </dd>
+        </dl>
+    </div>
+
+    <div class="button-container">
+        <ul class="pager">
+            <li class="previous">
+                <a href="#/">&larr; Back</a>
+            </li>
+        </ul>
+    </div>
+</div>

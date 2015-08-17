@@ -1,0 +1,27 @@
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+.wrapper .main-page-container .priority {
+  font-weight: bold;
+}
+.wrapper .main-page-container ul {
+  list-style: none;
+  padding: 0;
+}
+/*# sourceMappingURL=build/AllStyles.css.map */
+.task-header {
+  height: 70px;
+}
+.task-container .task-name {
+  border: 2px solid #0b97c4;
+  border-radius: 5px;
+}
+.task-container .task-description {
+  border: 2px solid #0b97c4;
+  border-radius: 5px;
+}
+.task-container p {
+  padding: 10px 10px 0 10px;
+}
+/*# sourceMappingURL=build/AllStyles.css.map */
