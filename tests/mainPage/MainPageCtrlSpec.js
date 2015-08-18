@@ -46,7 +46,7 @@ describe('MainPageCtrl', function () {
         expect(typeof scope.myStorage).toEqual('object');
         expect(scope.myStorage[0].id).not.toEqual(undefined);
         expect(scope.myStorage[0].name.length).toBeGreaterThan(0);
-        expect(scope.getTime(scope.myStorage[0].estimated_effort).length).toBeGreaterThan(0);
-        expect(scope.getTime((scope.myStorage[0].actual_effort))).not.toEqual(undefined);
+        expect(scope.myStorage[0].actual_effort).toEqual("03:30");
+        expect(scope.myStorage[0].estimated_effort).toEqual("05:50");
     });
 });

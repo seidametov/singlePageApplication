@@ -14,7 +14,6 @@
   ],
   "dependencies": {
     "angular-mocks": "~1.4.3",
-    "angular": "~1.4.3",
-    "moment": "~2.10.6"
+    "angular": "~1.4.3"
   }
 }
